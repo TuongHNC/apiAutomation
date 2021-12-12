@@ -57,7 +57,7 @@ public class DataByFlowImplement implements DataByFlow {
     private String getEnvironmentName() {
         String currentEnv = System.getProperty("environment");
         if (currentEnv == null) {
-            return EnvironmentType.STAGING.name().toLowerCase();
+            return EnvironmentType.STAGE.name().toLowerCase();
         } else {
             return currentEnv.toLowerCase();
         }

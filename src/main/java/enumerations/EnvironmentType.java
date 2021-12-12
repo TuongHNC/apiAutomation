@@ -3,7 +3,7 @@ package enumerations;
 public enum EnvironmentType {
 
     DEV ("src/main/resources/environments/dev.yml"),
-    STAGING ("src/main/resources/environments/staging.yml"),
+    STAGE ("src/main/resources/environments/stage.yml"),
     DEMO ("src/main/resources/environments/demo.yml"),
     PRODUCTION ("src/main/resources/environments/production.yml");
 

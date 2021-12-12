@@ -13,6 +13,7 @@ import org.testng.IExecutionListener;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
+import utilities.FileDirUtils;
 
 public class APIAutomationListener implements ITestListener, IExecutionListener {
 
@@ -67,6 +68,9 @@ public class APIAutomationListener implements ITestListener, IExecutionListener 
 
     @Override
     public void onExecutionFinish() {
+        // Check the folder reports exist or not
+        FileDirUtils.checkIfDirectoryExist(FrameworkConfig.getInstance().getProperty("report.path"));
+
         ExtentManager.getReporter().flush();
 //        uploadReport2AmazonS3Bucket();
 //        notifyOnHangoutsChannel();

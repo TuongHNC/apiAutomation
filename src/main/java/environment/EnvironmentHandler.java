@@ -19,7 +19,7 @@ public class EnvironmentHandler {
         if (targetEnv != null) {
             environment = targetEnv;
         } else {
-            environment = new Environment("STAGE", "src/main/resources/environments/staging.yml");
+            environment = new Environment("STAGE", "src/main/resources/environments/stage.yml");
         }
 
         LOGGER.info(String.format(LogConstants.ENVIRONMENT_INITIALIZATION_MESSAGE, environment.getEnvName().toUpperCase()));

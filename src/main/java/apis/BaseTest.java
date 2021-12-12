@@ -44,7 +44,7 @@ public abstract class BaseTest extends AbstractBaseRequest {
     @BeforeClass
     public void setUpClass() {
         LOGGER.info("START THE TEST >>>> " + this.getClass().getName());
-        connection = DBConnection.getInstance().get();
+//        connection = DBConnection.getInstance().get();
     }
 
     @BeforeMethod
@@ -57,7 +57,7 @@ public abstract class BaseTest extends AbstractBaseRequest {
 
     @AfterClass
     public void tearDownClass() {
-        DBConnection.getInstance().close();
+//        DBConnection.getInstance().close();
         this.dataByFlow.destroyAll();
         LOGGER.info("END THE TEST >>>> " + this.getClass().getName());
     }
