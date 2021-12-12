@@ -5,6 +5,16 @@ public final class LogConstants {
     private LogConstants() {
     }
 
+    //Framework log
+    public static String FRAMEWORK_CONFIG_FILE_PATH = "src/main/resources/frameworkconfig.properties";
+
+    //Environment Log
+    public static final String CANNOT_GET_PROPERTIES_FROM_FILE = "Cannot get properties from file, please check your file path >>>> ";
+
+    public static final String TARGET_PROPERTIES_NULL = "Target properties is null >>> ";
+
+    public static final String LOAD_CONFIGURATION_PROPERTIES_SUCCESS= "Loaded configuration properties from external file >>> ";
+
     //Data log
     public static final String DATA_SET_IS_NOT_SUPPORTED = "Data set %s is not supported!";
 
@@ -88,12 +98,18 @@ public final class LogConstants {
 
     public static final String FAILED_QUERY_MESSAGE = "Error to execute database query >>>>   ";
 
+    public static final String DELETE_RESULT_MESSAGE = "Deleted data with %s row(s) affected >>>> ";
+
     public static final String CLOSED_CONNECTED_DATABASE_MESSAGE = "Closed database connection >>>>";
 
     public static final String FAILED_CLOSED_CONNECTED_DATABASE_MESSAGE = "Something went wrong when closing database connection >>>> ";
 
     //Elastic query log
     public static final String CONNECT_TO_ELASTIC_SEARCH_MESSAGE = "Connecting to Elastic Search query >>>> ";
+
+    public static final String CONNECT_TO_AWS_ELASTIC_SEARCH_MESSAGE = "Connecting to AWS Elastic Search query >>>> ";
+
+    public static final String CONNECT_TO_ELASTIC_SEARCH_7_MESSAGE = "Connecting to Elastic Search 7 >>>> ";
 
     public static final String SUCCESS_CONNECT_TO_ELASTIC_SEARCH_MESSAGE = "Success";
 
@@ -102,6 +118,16 @@ public final class LogConstants {
     public static final String CLOSED_ELASTIC_SEARCH_CONNECTION = "Closed elastic search connection >>>>";
 
     public static final String TRY_TO_RECONNECT_ELASTIC_SEARCH = "Try to reconnect Elastic Search In >>>> %d second(s)";
+
+    public static final String SUCCESS_CONNECT_TO_AWS_ELASTIC_SEARCH_MESSAGE = "Connected to AWS Elastic Search successful";
+
+    public static final String SUCCESS_CONNECT_TO_ELASTIC_SEARCH_7_MESSAGE = "Connected to Elastic Search 7 successful";
+
+    public static final String CLOSED_AWS_ELASTIC_SEARCH_CONNECTION = "Closed AWS elastic search connection!!!";
+
+    public static final String TRY_TO_RECONNECT_AWS_ELASTIC_SEARCH = "Try to reconnect AWS Elastic Search in >>>> %d second(s)";
+
+    public static final String TRY_TO_RECONNECT_ELASTIC_SEARCH_7 = "Try to reconnect Elastic Search 7 in >>>> %d second(s)";
 
     //Hangouts log
     public static final String ERROR_TO_NOTIFY_THE_TEST_RESULT_ON_HANGOUTS = "Error to notify the test result on Hangouts chat!";
